@@ -57,11 +57,13 @@ Done!
 
 EXTRAS:
 
-Toggle Vo$USER Keybinding:
+Toggle record/stop Keybinding:
 
 In your desktop environment's keyboard settings, add a custom shortcut with:
 bash -c 'voxd --trigger-record'
 
+
+Start voxd:
 
 Create Script:
 
@@ -73,7 +75,7 @@ nano ~/start-voxd.sh
 2. Add this content:
 
 #!/bin/bash
-cd /home/$USER/Programs/voxd/
+cd /home/$USER/home/voxd/
 source .venv/bin/activate
 voxd --tray
 
@@ -81,7 +83,8 @@ voxd --tray
 
 chmod +x ~/start-voxd.sh
 
+Auto launch script on boot, make it a desktop shortcut or whatever.
 
-Alias:
+Launch voxd through alias:
 
-alias voxd='/home/$USER/Scripts/Applications/start-voxd.sh'
+alias voxd='/home/$USER/start-voxd.sh'
