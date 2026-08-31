@@ -1,8 +1,7 @@
-1:
-Download:
+1: Download:
 https://github.com/jakovius/voxd/releases/tag/v1.7.0
-2:
-Install Dependencies:
+
+2: Install Dependencies:
 sudo pacman -S --needed base-devel git cmake python-pip python-pyqt6 python-pyyaml python-requests python-setuptools ydotool xclip wl-clipboard alsa-plugins pipewire-pulse pavucontrol
 sudo pacman -S pyenv
 
