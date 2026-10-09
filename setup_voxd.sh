@@ -1,6 +1,6 @@
 #!/bin/bash
 set -e
-sudo pacman -Sy --needed --noconfirm base-devel git cmake python-pip python-pyqt6 python-pyyaml python-requests python-setuptools ydotool xclip wl-clipboard alsa-plugins pipewire-pulse pavucontrol pyenv openssl zlib xz tk sqlite ncurses bzip2 libffi
+sudo pacman -Sy --needed --noconfirm base-devel git cmake python-pip python-pyqt6 python-pyyaml python-requests python-setuptools ydotool xclip wl-clipboard alsa-plugins pipewire-pulse pavucontrol pyenv openssl zlib xz tk sqlite ncurses bzip2 libffi portaudio
 
 grep -q 'YDOTOOL_SOCKET' ~/.bashrc || cat >> ~/.bashrc <<'EOF'
 export PYENV_ROOT="$HOME/.pyenv"
